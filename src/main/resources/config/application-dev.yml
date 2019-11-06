@@ -59,9 +59,9 @@ spring:
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mariadb://localhost:3306/jhipsterGatewayApplication?useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/jhipsterGatewayApplication?useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password:
+    password: root
     hikari:
       poolName: Hikari
       auto-commit: false

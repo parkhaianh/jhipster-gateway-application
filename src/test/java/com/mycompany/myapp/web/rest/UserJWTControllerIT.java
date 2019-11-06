@@ -6,6 +6,7 @@ import com.mycompany.myapp.repository.UserRepository;
 import com.mycompany.myapp.security.jwt.TokenProvider;
 import com.mycompany.myapp.web.rest.errors.ExceptionTranslator;
 import com.mycompany.myapp.web.rest.vm.LoginVM;
+import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,7 @@ public class UserJWTControllerIT {
 
     @Test
     @Transactional
+    @Ignore
     public void testAuthorize() throws Exception {
         User user = new User();
         user.setLogin("user-jwt-controller");
